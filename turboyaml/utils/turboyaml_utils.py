@@ -18,6 +18,11 @@ def parse_args():
     parser.add_argument(
         "--api-key", type=str, help="OpenAI API Key."
     )
+
+    parser.add_argument(
+        "--model", type=str, help="OpenAI model."
+    )
+    
     parser.add_argument(
         "--yaml", type=str, help="Path to the YAML file for the output."
     )
