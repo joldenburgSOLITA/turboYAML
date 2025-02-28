@@ -33,8 +33,7 @@ async def start_process():
             "An error occurred while initializing the OpenAI API client. Please check your API key."
         )
 
-
-    model = "gpt-4-turbo-preview"
+    model = args.model or "chatgpt-4o-latest"
 
     # Log Analyzer
     # Process logs if --logs option is provided
